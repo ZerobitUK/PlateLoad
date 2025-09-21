@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plate Loading Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Plate Loading Calculator</h1>
+
+    <div class="input-section">
+      <label for="targetWeight">Enter Target Weight (kg):</label>
+      <input type="number" id="targetWeight" placeholder="e.g., 100" min="20">
+    </div>
+
+    <div class="barbell-section">
+      <label for="barbellWeight">Barbell Weight (kg):</label>
+      <select id="barbellWeight">
+        <option value="20">20 kg (Standard Olympic)</option>
+        <option value="15">15 kg (Women's Bar)</option>
+        <option value="10">10 kg (Technique Bar)</option>
+      </select>
+    </div>
+
+    <div class="plates-section">
+      <h3>Available Plates (per side)</h3>
+      <div class="plate-options">
+        <label><input type="checkbox" class="plate-checkbox" value="25" checked> 25 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="20" checked> 20 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="15" checked> 15 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="10" checked> 10 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="5" checked> 5 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="2.5" checked> 2.5 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="1.25" checked> 1.25 kg</label>
+        <label><input type="checkbox" class="plate-checkbox" value="0.5" checked> 0.5 kg</label>
+      </div>
+    </div>
+
+    <div id="results" class="results-section">
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
